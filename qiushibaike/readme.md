@@ -1,5 +1,5 @@
 #Qiushibaike Crawl 
-My first crawl based on Python, to get the funny content on [www.qiushibaike.com](www.qiushibaike.com)
+My first crawl based on Python, to get the funny content on [www.qiushibaike.com](http://www.qiushibaike.com/)
 
 ##Notable Features
 
