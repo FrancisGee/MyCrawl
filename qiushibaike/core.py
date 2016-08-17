@@ -1,10 +1,18 @@
+###########################################################
+##### This is the core code of the qiushibaike code  ######
+
+###########################################################
+
+
+
+
 
 # -*- coding:utf-8 -*-
 import urllib
 import urllib2
 import re
 
-opener=urllib2.build_opener()
+
 page=1
 
 url='http://www.qiushibaike.com/hot/page/'+str(page)
@@ -12,14 +20,13 @@ user_agent='Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko)
 headers={'User-Agent':user_agent}
 
 
-opener.addheaders=headers.items()
+
 
 try:
-    request=urllib2.Request(url)
-    response=opener.open(url)
+    request=urllib2.Request(url,headers=headers)
+    response=urllib2.urlopen(request)
     
     content= response.read().decode('utf-8')
-     # pattern=re.compile('<div class="author clearfix">.*?href.*?<img src.*?title=.*?<h2>(.*?)</h2>.*?<div class="content">(.*?)</div>.*?<i class="number">(.*?)</i>',re.S)
     pattern=re.compile('<div class="author clearfix">.*?<img src.*?title=.*?<h2>(.*?)</h2>.*?<div class="content">(.*?)</div>.*?<i class="number">(.*?)</i>.*?<i class="number">(.*?)</i>',re.S)
     items=re.findall(pattern,content)
     for item in items:
