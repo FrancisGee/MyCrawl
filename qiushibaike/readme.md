@@ -4,7 +4,7 @@ My first crawl based on Python, to get the funny content on [www.qiushibaike.com
 ##Notable Features
 
 * Written in Python2.X
-* Based on the libarary `re`,`lib`,`lib2`
+* Based on the libarary `re`,`urllib`,`urllib2`
 * Crawl the author,content,the number of favorities and comments of each "duanzi"
 
 Features in future
