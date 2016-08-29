@@ -7,7 +7,7 @@ My first crawl based on Python, to get the funny content on [www.qiushibaike.com
 * Based on the libarary `re`,`urllib`,`urllib2`
 * Crawl the author,content,the number of favorities and comments of each "duanzi"
 
-Features in future
+##Features in future
 * get the image of "duanzi"
 * support Python 3.X
 * sort the "duanzi" in the principle of the "Favorite" or "Comments"
