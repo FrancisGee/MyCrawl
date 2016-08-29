@@ -1,5 +1,5 @@
 #Baidutieba Crawl
-My second crawl based on Python,used to get all the posts on tieba.baidu.com((for example)[http://tieba.baidu.com/p/3138733512?see_lz=0&pn=1] ),then write them to the disk file
+My second crawl based on Python,used to get all the posts on tieba.baidu.com,[example](http://tieba.baidu.com/p/3138733512?see_lz=0&pn=1),then write them to the disk file
 
 ##Notable Features
 
